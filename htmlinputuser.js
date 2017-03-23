@@ -2,12 +2,13 @@ $(document).ready(function() {
   var $form = $('form')
   var $links = $('a')
 
-  $links.on('click', function(e) {
-    e.preventDefault()
-  })
+  // $links.on('click', function(e) {
+  //   e.preventDefault()
+  // })
 
   $form.on('submit', function (e) {
     e.preventDefault()
+    alert('You have submitted your enquiry.')
     var array = $(this).serializeArray()
     var $h1 = $('h1')
     var textContent = ''
